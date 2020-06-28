@@ -24,10 +24,3 @@ spec:
          ports:
          - containerPort: 80
            name: webtest
-         volumeMounts:
-         - name: webtest-vol
-           mountPath: /var/www/html
-       volumes:
-       - name: webtest-vol
-         persistentVolumeClaim:
-           claimName: webtest-pv-claim
